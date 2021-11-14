@@ -1,0 +1,15 @@
+<div>
+    {{#each questions}}
+
+        <div>{{this.text}}</div>
+
+        {{#if (isEqual this.type 1)}}
+        A
+        {{else if (isEqual this.type 2)}}
+        B
+        {{else}}
+        C
+        {{/if}}
+
+    {{/each}}
+</div>
