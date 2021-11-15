@@ -12,6 +12,11 @@ html, body{
     height: 100%;
 }
 
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
 .header{
     display: flex;
     background-color: #757575;
@@ -21,6 +26,16 @@ html, body{
 
 .content {
     flex: 1 0 auto;
+    text-align: left;
+}
+
+.input-box {
+    
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
 }
 
 .footer {
