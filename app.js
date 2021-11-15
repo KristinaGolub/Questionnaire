@@ -26,14 +26,18 @@ app.get("/", function (request, response) {
     title: "   ",
     questions: [
       {
+        num: 1,
         text: "Что есть мы?",
         type: 1,
       },
       {
+        num: 2,
+
         text: "Что есть я?",
         type: 1,
       },
       {
+        num: 3,
         text: "Что есть они?",
         type: 1,
       },
