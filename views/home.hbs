@@ -2,7 +2,7 @@
     
 
 
-    <form action="/">
+    <form action="/answers/push" method="post">
         {{#each questions}}
             <div class="question-box">
                 <p for="">{{this.num}}. {{this.text}}</p>
@@ -18,6 +18,7 @@
             </div>
 
         {{/each}}
+        <input type="submit">
     </form>
 
 </div>

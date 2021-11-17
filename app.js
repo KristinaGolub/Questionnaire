@@ -1,12 +1,20 @@
 const { response } = require("express");
 const express = require("express");
 const expressHbs = require("express-handlebars");
+const bodyParser = require('body-parser')
 const hbs = require("hbs");
+
+
 
 
 
 const app = express();
 
+
+// app.use(bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+})); 
 app.set("view engine", "hbs");
 
 app.engine(
@@ -80,6 +88,10 @@ app.get("/", function (request, response) {
   });
 });
 
+app.post("/answers/push", function (request, response) {
+    console.log(request.body)
+    response.render("thanks")
+})
 
 
 console.log('http://localhost:3000/')
