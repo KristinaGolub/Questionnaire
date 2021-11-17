@@ -4,9 +4,17 @@
 
     <form action="/">
         {{#each questions}}
-            <div class="input-box">
-                <label for="">{{this.num}}. {{this.text}}</label>
-                <input type="text" name="" id="">
+            <div class="question-box">
+                <p for="">{{this.num}}. {{this.text}}</p>
+
+
+                    {{#each this.answers}}
+                        <div class="radio-input">
+                            <input class="radio-form" type="radio" name="AAA" id="aadssda{{num}}">
+                            <label class="label" for="aadssda{{num}}">{{this.text}}</label>
+                        </div>
+                    {{/each}}
+
             </div>
 
         {{/each}}

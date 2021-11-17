@@ -19,9 +19,10 @@ html, body{
 
 .header{
     display: flex;
-    background-color: #757575;
+    background-color: #9e9797;
     color: #FFFFFF;
     align-items: center;
+    padding: 1em 0;
 }
 
 .content {
@@ -29,16 +30,34 @@ html, body{
     text-align: left;
 }
 
-.input-box {
-    
+.radio-input {
     margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-label {
-    display: block;
+
+.label::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border:1px solid orange;
+    position: absolute;
+    left: -24px;
+    top:-3px
+}
+
+.radio-form {
+    display: none;
+}
+
+.radio-input .radio-form:checked+label::before {
+    background: radial-gradient(70% 70% at center, orange 50%, transparent 50%);
 }
 
 .footer {
     flex: 0 0 auto;
 }
-
