@@ -10,15 +10,15 @@
 
                     {{#each this.answers}}
                         <div class="radio-input">
-                            <input class="radio-form" type="radio" name="AAA" id="aadssda{{num}}">
-                            <label class="label" for="aadssda{{num}}">{{this.text}}</label>
+                            <input class="radio-form" type="radio" value="{{this.num}}" name="{{this.name}}" id="{{this.name}}{{this.num}}">
+                            <label class="label" for="{{this.name}}{{this.num}}">{{this.num}}. {{this.text}}</label>
                         </div>
                     {{/each}}
 
             </div>
 
         {{/each}}
-        <input type="submit">
+        <button class="btn-submit transition" type="submit">Отправить</button>
     </form>
 
 </div>
