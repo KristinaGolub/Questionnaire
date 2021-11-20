@@ -1,4 +1,4 @@
-const { response } = require("express");
+// const { response } = require("express");
 const express = require("express");
 const expressHbs = require("express-handlebars");
 const bodyParser = require('body-parser')
@@ -40,58 +40,50 @@ app.get("/", function (request, response) {
         answers: [
           {
             num: 1,
-            name: "what",
             text: "Я щитаю что нас нет",
           },
           {
             num: 2,
-            name: "what",
             text: "2",
           },
           {
             num: 3,
-            name: "what",
             text: "3",
           },
           {
             num: 4,
-            name: "what",
             text: "4",
           },
         ],
       },
-      {
-        num: 2,
-        text: "Что есть я?",
-        type: 1,
-        answers: [
-          {
-            num: 1,
-            text: "1",
-            name: "what2",
-          },
-          {
-            num: 2,
-            text: "2",
-            name: "what2",
-          },
-          {
-            num: 3,
-            text: "3",
-            name: "what2",
-          },
-          {
-            num: 4,
-            text: "4",
-            name: "what2",
-          },
-        ],
-      },
-      {
-        num: 3,
-        text: "Что есть они?",
-        type: 1,
-      },
+      // {
+      //   num: 2,
+      //   text: "Что есть я?",
+      //   type: 1,
+      //   answers: [
+      //     {
+      //       num: 1,
+      //       text: "1",
+      //     },
+      //     {
+      //       num: 2,
+      //       text: "2",
+      //     },
+      //     {
+      //       num: 3,
+      //       text: "3",
+      //     },
+      //     {
+      //       num: 4,
+      //       text: "4",
+      //     },
+      //   ],
+      // },
+      // {
+      //   num: 3,
+      //   text: "Что есть они?",
+      //   type: 1,
+      // },
     ],
   });
 });
