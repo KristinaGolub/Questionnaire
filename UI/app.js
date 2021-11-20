@@ -39,51 +39,59 @@ app.get("/", function (request, response) {
         type: 1,
         answers: [
           {
+            name: "q1",
             num: 1,
             text: "Я щитаю что нас нет",
           },
           {
+            name: "q1",
             num: 2,
             text: "2",
           },
           {
+            name: "q1",
             num: 3,
             text: "3",
           },
           {
+            name: "q1",
             num: 4,
             text: "4",
           },
         ],
       },
-      // {
-      //   num: 2,
-      //   text: "Что есть я?",
-      //   type: 1,
-      //   answers: [
-      //     {
-      //       num: 1,
-      //       text: "1",
-      //     },
-      //     {
-      //       num: 2,
-      //       text: "2",
-      //     },
-      //     {
-      //       num: 3,
-      //       text: "3",
-      //     },
-      //     {
-      //       num: 4,
-      //       text: "4",
-      //     },
-      //   ],
-      // },
-      // {
-      //   num: 3,
-      //   text: "Что есть они?",
-      //   type: 1,
-      // },
+      {
+        num: 2,
+        text: "Что есть я?",
+        type: 1,
+        answers: [
+          {
+            name: "q2",
+            num: 1,
+            text: "1",
+          },
+          {
+            name: "q2",
+            num: 2,
+            text: "2",
+          },
+          {
+            name: "q2",
+            num: 3,
+            text: "3",
+          },
+          {
+            name: "q2",
+            num: 4,
+            text: "4",
+          },
+        ],
+      },
+      {
+        num: 3,
+        text: "Что есть они?",
+        type: 1,
+      },
     ],
   });
 });
